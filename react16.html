@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>use with react15</title>
+</head>
+<body>
+<div id="app"></div>
+<script src="./node_modules/react16/umd/react.production.min.js"></script>
+<script src="./node_modules/react-dom16/umd/react-dom.production.min.js"></script>
+<script src="./dist/old/React15Component.js"></script>
+<script src="./dist/new/React16Component.js"></script>
+<script type="text/javascript">
+    ReactDOM.render(
+        React.createElement('div', {}, [
+            React.createElement(React15Component),
+            React.createElement(React16Component)
+        ]),
+        document.querySelector('#app')
+    )
+</script>
+
+</body>
+</html>
